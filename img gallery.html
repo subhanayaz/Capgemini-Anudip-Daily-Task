@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dropdowns</title>
+    <style>
+        nav{
+            background-color : black;
+            padding: 10px;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+        }
+        
+        ul{
+            margin-left: 200px;
+
+        }
+
+        .navitem{
+            display: inline;
+            margin-left: 30px;
+
+        }
+
+        .content{
+            display: none;
+            position: absolute;
+            z-index: 2;
+            left: 150px;
+            background-color: black;
+            padding: 10px;
+
+        }
+
+        .dropitem{
+            display: block;
+
+        }
+
+        li:hover{
+            background-color: lightgray;
+            padding: 10px;
+            color: black;
+        }
+
+        .img{
+            margin-left: 25px;
+            opacity: 0.7;
+            border: 1px solid gray;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .img1{
+            margin-left: 25px;
+            border: 1px solid gray;
+            border-radius: 10px;
+            padding: 10px;
+            filter:brightness(200%);
+        }
+
+        .img:hover{
+            opacity: 1;
+        }
+        
+        .img1:hover{
+            filter: blur(0px);
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="navitem"> <a href="">Home</a></li>
+            <li class="navitem"> <a href="">Services</a> 
+                <ul class="content"><li class="dropitem"><a href="">Services</a></li></ul>
+                <ul class="content"><li class="dropitem"><a href="">Join Us</a></li></ul>
+                <ul class="content"><li class="dropitem"><a href="">Contact Us</a></li></ul>
+                <ul class="content"><li class="dropitem"><a href="">About Us</a></li></ul>
+            </li>
+            <li class="navitem"> <a href="">About Us</a></li>
+            <li class="navitem"> <a href="">Contact Us</a></li>
+            <li class="navitem"> <a href="">Join Us</a></li>
+        </ul>
+    </nav>
+    <br><br>
+    <div class="pic">
+        <a href="pic.jpg"><img src="pic.jpg" alt="" height="300px" width="450px" class="img"></a>
+        <a href="flower.jpg"><img src="flower.jpg" alt="" height="300px" width="450px" class="img"></a>
+        <a href="waterfall.jpg"><img src="waterfall.jpg" alt="" height="300px" width="450px" class="img"></a>
+    </div>
+
+    <div class="pic1">
+        <a href="pic.jpg"><img src="pic.jpg" alt="" height="300px" width="450px" class="img1"></a>
+        <a href="flower.jpg"><img src="flower.jpg" alt="" height="300px" width="450px" class="img1"></a>
+        <a href="waterfall.jpg"><img src="waterfall.jpg" alt="" height="300px" width="450px" class="img1"></a>
+    </div>
+</body>
+</html>
